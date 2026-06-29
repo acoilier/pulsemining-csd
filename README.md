@@ -70,6 +70,7 @@ Build-time variable:
 - The default worker name is derived from the container hostname when `ARIA_WORKER` is not set.
 - The image expects the bundled runtime libraries to live next to the miner binary in the extracted archive.
 - This repository is public and intentionally avoids site-specific secrets or org-only values.
+- Versioning is managed manually in the Dockerfile: update `ARIA_VERSION` and `ARIA_TARBALL_URL` there when releasing a new miner version.
 
 ## License
 
