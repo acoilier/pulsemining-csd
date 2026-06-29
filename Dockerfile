@@ -1,9 +1,13 @@
 FROM debian:bookworm-slim
 
 ARG DEBIAN_FRONTEND=noninteractive
+ARG ARIA_VERSION=0.3.1
 ARG ARIA_TARBALL_URL=https://pool.ariabrain.com/downloads/aria-csd-miner-v0.3.1-d7f845666ae549c1.tar.gz
 
+LABEL org.opencontainers.image.version="${ARIA_VERSION}"
+
 ENV DEBIAN_FRONTEND=noninteractive \
+    ARIA_VERSION=${ARIA_VERSION} \
     ARIA_POOL=csd.ariabrain.com:13333 \
     ARIA_ADDRESS= \
     ARIA_WORKER= \

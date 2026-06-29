@@ -28,6 +28,7 @@ jobs:
           images: acoilier/pulsemining-csd
           tags: |
             type=raw,value=latest
+            type=raw,value=0.3.1
             type=sha,format=long
 
       - name: Build and push
@@ -35,6 +36,8 @@ jobs:
         with:
           context: .
           push: true
+          build-args: |
+            ARIA_VERSION=0.3.1
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           provenance: false

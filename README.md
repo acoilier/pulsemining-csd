@@ -10,6 +10,7 @@ The image is intended for container platforms that provide NVIDIA GPUs.
 Docker Hub image:
 
 - `acoilier/pulsemining-csd:latest`
+- `acoilier/pulsemining-csd:0.3.1`
 
 ## Features
 
